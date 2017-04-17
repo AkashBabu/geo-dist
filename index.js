@@ -19,7 +19,7 @@ function deg2rad(deg) {
  * @return {Number}      Distance in kms
  */
 function distance(lat1, lon1, lat2, lon2) {
-    Array.prototype.slice.call(arguments).forEach(arg => {
+    Array.prototype.slice.call(arguments).forEach(function(arg){
         if (arg.constructor != Number) {
             throw new Error("Distance() accepts only Numbers")
         }
